@@ -9,7 +9,7 @@ public class SomeEventProducer {
 
     public SomeEventProducer(String clientId) {
         try {
-            MQTT mqtt = new MQTT();
+            mqtt = new MQTT();
             mqtt.setHost("tcp://localhost:1883");
             mqtt.setUserName("abc");
             mqtt.setPassword("pass123");

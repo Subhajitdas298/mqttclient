@@ -26,6 +26,7 @@ public class SomeEventProducerPaho {
         try {
             mqtt.getTopic(topicName).publish(data.getBytes(), 1, false);
             mqtt.disconnect();
+            System.exit(0);
         }
         catch( Exception e ) {
             System.out.println("Exception occurred:  " + e.getMessage());

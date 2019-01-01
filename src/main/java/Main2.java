@@ -6,7 +6,7 @@ public class Main2 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        producer.sendMessage("topic1", "hello");
+        producer.sendMessage("topic1", "exit");
         //producer.close();
     }
 }
